@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import Signup from './signUp/Signup';
+import SignUp from './signup-me/SignUp';
 
 export default function Home() {
 	return (
 		<div className={styles.container}>
-			<Signup></Signup>
+			<SignUp></SignUp>
 		</div>
 	);
 }
