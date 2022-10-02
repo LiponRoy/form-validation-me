@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -15,6 +15,7 @@ const schema = yup
 //End yup schema
 
 const SignUp = () => {
+	const [myData, setMydata] = useState();
 	// yup schema and hook form
 	const {
 		register,
@@ -25,7 +26,9 @@ const SignUp = () => {
 	});
 	// End yup schema and hook form
 	const onSubmit = data => {
-		console.log(data);
+		setMydata({ ...data });
+		// console.log(myData);
+		console.log(myData);
 	};
 	return (
 		<>
@@ -33,7 +36,7 @@ const SignUp = () => {
 				<div className='my-signup-form'>
 					<span className='heading_text'>SIGNUP</span>
 					<form onSubmit={handleSubmit(onSubmit)}>
-						<input className='form-Input-me' placeholder='Full Name' type='text' onChange={Name => console.log(Name)} {...register('Name')} />
+						<input className='form-Input-me' placeholder='Full Name' type='text' {...register('Name')} />
 						<p>{errors.Name?.message}</p>
 						<input className='form-Input-me' placeholder='Email' type='text' {...register('Email')} />
 						<p>{errors.Email?.message}</p>
