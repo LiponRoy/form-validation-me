@@ -1,55 +1,156 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
- /* For signUp */
+
+
+
+ /* Hook form signUp */
  .form-container {
    height: 100vh;
-   background-color: #63738A;
-
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
       color: rgb(130, 130, 130);
  }
+    .my-signup-form {
+      background-color: #3fa411;
+      padding: 42px;
+      border-radius: 8px;
+    }
+
  .heading_text{
   font-size: 26px;
-  font-weight: 600;
-  text-align: center;
-  color: rgb(43, 43, 43);
+  font-weight: 700;
+  color: #ffffff;
  }
- .my-signup-form{
-    background-color: #F2F3F7;
-    padding: 42px;
-    border-radius: 8px;
- }
- .signUpError {
-   color: red;
-   display: inline;
-   margin: 8px 4px;
+
+ .errMessage {
+   color: rgb(138, 0, 0);
+   margin: 2px 2px;
  }
 
  .form-Input-me{
   font-size: 19px;
-  width: 350px;
-  height: 40px;
-  background-color: white;
+  width: 380px;
+  height: 50px;
   border-radius: 5px;
-  margin-top: 6px;
-  padding-left: 5px;
+  margin: 8px 0px;
+  padding-left: 8px;
+  border: 0px;
  }
  .form-submit-me {
-    width: 360px;
+  font-size: 21px;
+    width: 120px;
       height: 50px;
       border-radius: 5px;
       margin-top: 15px;
       cursor: pointer;
-   background-color: #4DA54D;
+   background-color: #078415;
+   border: 1px solid #ffffff;
    color: white;
  }
- /* // End signup */
+/* End  Hook form signUp */
+
+
+
+ /* Hook form Login */
+ .form-container {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+      color: rgb(130, 130, 130);
+ }
+    .my-signup-form {
+      background-color: #3fa411;
+      padding: 32px;
+      border-radius: 8px;
+    }
+
+ .heading_text{
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+ }
+
+ .errMessage {
+   color: rgb(138, 0, 0);
+   margin: 2px 2px;
+ }
+
+ .form-Input-me{
+  font-size: 19px;
+  width: 380px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 8px 0px;
+  padding-left: 8px;
+  border: 0px;
+ }
+ .form-submit-me {
+  font-size: 21px;
+    width: 120px;
+      height: 50px;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+   background-color: #078415;
+   border: 1px solid #ffffff;
+   color: white;
+ }
+ /* End Hook form Login */
+
+
+ /* use state register Form */
+ .register-form-container {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+      color: rgb(239, 239, 239);
+ }
+    .my-register-form {
+      background-color: #0a975a;
+      padding: 32px;
+      border-radius: 8px;
+    }
+
+ .register-heading_text{
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+ }
+
+ .register-errMessage {
+   color: rgb(138, 0, 0);
+   margin: 2px 2px;
+ }
+
+ .register-form-Input-me{
+  font-size: 19px;
+  width: 380px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 8px 0px;
+  padding-left: 8px;
+  border: 0px;
+ }
+ .register-form-submit-me{
+  font-size: 21px;
+    width: 120px;
+      height: 50px;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+        background-color: #097647;
+   border: 1px solid #ffffff;
+   color: white;
+ }
+ /* End  use state register Form */
